@@ -1,81 +1,144 @@
-Sales Management System
-Description / Overview
+# 🧾 Sales Management System
 
-The Sales Management System is designed to help businesses efficiently manage product sales, customer transactions, and revenue tracking. It supports essential sales operations to improve workflow, accuracy, and overall productivity.
+## 📖 Description / Overview
+The **Sales Management System** is designed to help businesses efficiently manage product sales, customer transactions, and revenue tracking.  
+It supports essential sales operations to improve workflow, accuracy, and overall productivity.  
 
-This project was developed as part of our Midterm Examination to demonstrate understanding of transaction processes and fundamental system development concepts.
+This project was developed as part of our **Midterm Examination** to demonstrate understanding of transaction processes and fundamental system development concepts.
 
-Objectives
+---
 
-Provide a reliable system for managing sales transactions
+## 🎯 Objectives
+- Provide a reliable system for managing sales transactions  
+- Track customer purchases and product availability  
+- Reduce human error in manual recording of sales  
+- Improve reporting and monitoring of business performance  
+- Apply learned programming and system development skills  
 
-Track customer purchases and product availability
+---
 
-Reduce human error in manual recording of sales
+## ✅ Features / Functionality
+- ➕ Add, edit, and delete products  
+- 🧾 Manage customer transactions and sales records  
+- 💰 View total income or sales reports  
+- 💻 Simple and user-friendly interface  
+- ⚙️ Data validation to avoid incorrect inputs  
 
-Improve reporting and monitoring of business performance
+---
 
-Apply learned programming and system development skills
+## 🛠 Installation Instructions
 
-Features / Functionality
+Follow these steps to set up and run the **Sales Management System** properly:
 
-✔ Add, edit, and delete products
-✔ Manage customer transactions and sales records
-✔ View total income or sales reports
-✔ Simple and user-friendly interface
-✔ Data validation to avoid incorrect inputs
-
-🛠 Installation Instructions
-
-Clone the repository or download the project files:
+```bash
+Step 1 — Clone or Download the Project
+Download the project from GitHub or clone it using the command:
 
 git clone https://github.com/pogisieli/BoadoSalesManagement.git
 
+cd SalesManagementSystem
 
-Navigate into the project folder:
+---
+
+Step 2 — Navigate to the Project Folder
+Use your terminal or file explorer to enter the project folder:
 
 cd SalesManagementSystem
 
+---
 
-Install dependencies (if applicable):
+Step 3 — Install Dependencies (If Applicable)
+If your project uses Node.js or any package manager, run:
 
 npm install
 
+Skip this step if the project is purely PHP or Python-based.
 
-(or remove this if not using npm — update based on your actual setup)
+For PHP projects, make sure the following extensions are enabled in php.ini:
 
-Run the system based on your development tool requirements
-(Example: using a local server if it's a web system)
+extension=mysqli
+extension=pdo_mysql
 
-Usage
+---
 
-Launch the system
+Step 4 — Set Up the Database
 
-Log in or access the main interface
+1. Open XAMPP, Laragon, or WAMP, and start Apache and MySQL.
+2. Go to http://localhost/phpmyadmin
+3. Create a new database (example: sales_db).
+4. Import the SQL file included in the project folder (database.sql or similar).
+5. Update your database configuration file (for example config.php or .env) with your local credentials:
 
-Perform sales transactions:
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "sales_db";
 
-Add products to the sale
+---
 
-Input payment and complete the transaction
+Step 5 — Configure the Environment
+If your system uses an environment file:
 
-View sales report for monitoring and documentation
+1. Copy the example configuration file:
 
-📸 Screenshots or Code Snippets
+cp .env.example .env
 
-Add your system images like this:
+2. Update .env with your correct database and server details.
+Example .env:
 
-![System Dashboard](images/dashboard.png)
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=sales_db
+APP_ENV=local
+APP_DEBUG=true
 
+---
 
-Or show a code snippet example:
+Step 6 — Start Your Local Server
+Place your project folder inside your htdocs (for XAMPP) or www directory (for WAMP).
+Then, run your server:
+For XAMPP users:
+Open the XAMPP Control Panel
+Start Apache and MySQL
 
-// Save Sales Transaction
-$sale->save();
+---
 
+Step 7 — Access the System
+Open your browser and visit:
 
-(You will replace with your actual screenshots/code later.)
+http://localhost/SalesManagementSystem
 
-👥 Contributors
+or if your folder name differs:
+http://localhost/YourFolderName
 
-Elijah Nathan B. Boado
+If it’s a web app using Node.js or another backend, you can run:
+npm start
+
+and visit:
+http://localhost:3000
+
+---
+
+Step 8 — Log In and Test
+
+Use the default credentials (if provided in the project).
+Add sample products, perform a transaction, and check the sales report to verify everything works.
+
+---
+
+You can paste this right below your `## 🛠 Installation Instructions` heading — it’s fully formatted and Markdown-ready ✅
+
+---
+
+Contributors
+
+Elijah Nathan T. Boado
+Marben Antony L. Madrio
+
+---
+
+Notes
+
+This README.md serves as the official documentation for the Midterm Project.
+Make sure to include real screenshots, correct file paths, and accurate setup instructions before submission.
