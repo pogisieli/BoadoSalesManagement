@@ -1,11 +1,11 @@
-📌 Sales Management System
-📖 Description / Overview
+Sales Management System
+Description / Overview
 
 The Sales Management System is designed to help businesses efficiently manage product sales, customer transactions, and revenue tracking. It supports essential sales operations to improve workflow, accuracy, and overall productivity.
 
 This project was developed as part of our Midterm Examination to demonstrate understanding of transaction processes and fundamental system development concepts.
 
-🎯 Objectives
+Objectives
 
 Provide a reliable system for managing sales transactions
 
@@ -17,7 +17,7 @@ Improve reporting and monitoring of business performance
 
 Apply learned programming and system development skills
 
-✅ Features / Functionality
+Features / Functionality
 
 ✔ Add, edit, and delete products
 ✔ Manage customer transactions and sales records
@@ -29,7 +29,7 @@ Apply learned programming and system development skills
 
 Clone the repository or download the project files:
 
-git clone https://github.com/USERNAME/REPO.git
+git clone https://github.com/pogisieli/BoadoSalesManagement.git
 
 
 Navigate into the project folder:
@@ -47,7 +47,7 @@ npm install
 Run the system based on your development tool requirements
 (Example: using a local server if it's a web system)
 
-🚀 Usage
+Usage
 
 Launch the system
 
@@ -79,4 +79,3 @@ $sale->save();
 👥 Contributors
 
 Elijah Nathan B. Boado
-(Add your partner here if the system is done by two members)
